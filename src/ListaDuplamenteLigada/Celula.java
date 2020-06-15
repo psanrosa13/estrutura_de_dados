@@ -1,4 +1,4 @@
-package listaLigada;
+package ListaDuplamenteLigada;
 
 public class Celula {
 
@@ -33,7 +33,6 @@ public class Celula {
     public Celula getAnterior() {
         return anterior;
     }
-
     public void setAnterior(Celula anterior) {
         this.anterior = anterior;
     }
