@@ -16,7 +16,7 @@ public class TesteRemove {
             System.out.println(palavra);
         }
         conjunto.remove("Rafael");
-        
+
         palavras = conjunto.pegaTodas();
 
         System.out.println("depois de remover");

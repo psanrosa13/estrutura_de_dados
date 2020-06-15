@@ -54,6 +54,15 @@ public class ConjuntoEspalhamento {
     }
 
     private int calculaIndiceDaTabela(String palavra){
-        return palavra.toLowerCase().charAt(0) % 26;
+        int codigoDeEspalhamento = this.calculaCodigoDeEspalhamento(palavra);
+        return codigoDeEspalhamento % this.tabela.size();
+    }
+
+    private int calculaCodigoDeEspalhamento(String palavra){
+        int codigo = 1;
+        for (int i = 0; i < palavra.length(); i++) {
+            codigo =31 * codigo + palavra.charAt(i);
+        }
+        return codigo;
     }
 }
