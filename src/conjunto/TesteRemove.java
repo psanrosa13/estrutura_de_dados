@@ -9,10 +9,10 @@ public class TesteRemove {
         conjunto.adiciona("Ana");
         conjunto.adiciona("Paulo");
 
-        List<String> palavras = conjunto.pegaTodas();
+        List<Object> palavras = conjunto.pegaTodas();
 
         System.out.println("antes de remover");
-        for (String palavra : palavras) {
+        for (Object palavra : palavras) {
             System.out.println(palavra);
         }
         conjunto.remove("Rafael");
@@ -21,7 +21,7 @@ public class TesteRemove {
 
         System.out.println("depois de remover");
 
-        for (String palavra : palavras) {
+        for (Object palavra : palavras) {
             System.out.println(palavra);
         }
     }
